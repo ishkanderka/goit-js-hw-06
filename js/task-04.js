@@ -9,12 +9,12 @@ totalValue.innerHTML = counterValue;
 
 const onIncrementBtnClick = () => {
   counterValue += 1;
-  totalValue.innerHTML = counterValue;
+  totalValue.textContent = counterValue;
 };
 
 const onDecrementBtnClick = () => {
   counterValue -= 1;
-  totalValue.innerHTML = counterValue;
+  totalValue.textContent = counterValue;
 };
 
 incrementBtn.addEventListener("click", onIncrementBtnClick);
