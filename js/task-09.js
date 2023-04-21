@@ -4,8 +4,11 @@ const btn = document.querySelector(".change-color");
 
 function onBtnClick(event) {
   event.preventDefault();
-  body.style.backgroundColor = getRandomHexColor();
-  colorValue.innerHTML = body.style.backgroundColor;
+  // body.style.backgroundColor = getRandomHexColor();
+  // colorValue.textContent = body.style.backgroundColor;
+  const color = getRandomHexColor();
+  body.style.backgroundColor = color;
+  colorValue.textContent = color;
 }
 
 function getRandomHexColor() {
